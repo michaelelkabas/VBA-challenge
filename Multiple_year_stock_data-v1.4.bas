@@ -17,10 +17,10 @@ Sub StockAnalysis()
     Dim greatestDecreaseTicker As String
     Dim greatestVolumeTicker As String
     
-    ' Initialize greatest increase, decrease, and volume to large negative numbers
-    greatestIncrease = -9999999
-    greatestDecrease = 9999999
-    greatestVolume = -9999999
+    ' Initialize greatest increase, decrease, and volume to ensure consistent behavior throughout the program
+    greatestIncrease = 0
+    greatestDecrease = 0
+    greatestVolume = 0
     
     ' Loop through each sheet in the workbook
     For Each ws In ThisWorkbook.Sheets
